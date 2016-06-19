@@ -9,6 +9,8 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "q": "^1.4.1"
+    "co": "^4.6.0",
+    "q": "^1.4.1",
+    "thunkify": "^2.1.2"
   }
 }
