@@ -1,5 +1,4 @@
 var fs = require('fs');
-var buffer = new Buffer('sergio\n');
 
 // Se pierden los closures
 // Hay que seguir la ejecución viendo el código función a función, de arriba a abajo
@@ -10,7 +9,7 @@ function writeFile(err, _fd) {
     if (err)
         return console.log('error opening file: ' + err);
     fd = _fd;
-    fs.write(fd, buffer, 0, buffer.length, null, closeFile);
+    fs.write(fd, 'sergio\n', closeFile);
 };
 
 function closeFile(err) {
